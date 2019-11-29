@@ -1,22 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import { Heading } from "react-bulma-components";
 
 export default () => {
   return (
     <HeaderDiv>
       <div>
-        <h4>Maaruf Dauda</h4>
+        <Heading>Why even should you talk to me?</Heading>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-          temporibus sit optio quod eveniet, fugit ratione quia vero error,
-          repudiandae dignissimos accusantium. Ex delectus enim nostrum.
-          Similique excepturi culpa harum minus nihil, mollitia quisquam.
+          <br />
+          I have six years of experience with the semi-colon. Admittedly, two of
+          those were spent drifting from one shiny new technology to another.{" "}
+          <br /> <br />
+          These days, however, I boast proudly of a solid four years of
+          experience with Native Android Development, two years of experience of
+          experience with Hybrid Mobile (Flutter) development and almost one
+          year of experience with Full-Stack Web technologies which I just
+          happened to pick up at Lambda School.
         </p>
       </div>
 
       <div>
         <img
-          src="https://res.cloudinary.com/emkaydauda/image/upload/c_fill,h_3024,w_3024/v1574869041/IMG_1752.jpg"
+          src="https://res.cloudinary.com/emkaydauda/image/upload/c_fill,h_2900,w_3024/v1574869041/IMG_1752.jpg"
           alt="A lovely one of me"
         />
       </div>
@@ -26,15 +32,25 @@ export default () => {
 
 const HeaderDiv = styled.div`
   display: flex;
-  /* height: 100%; */
 
   > div {
     width: 50%;
-    /* height: 100%; */
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+    }
+  }
+
+  p {
+    padding-right: 1.4rem;
   }
 
   img {
-    /* height: 100%; */
     width: 100%;
+    border-radius: 2rem;
   }
 `;
