@@ -12,7 +12,7 @@ export default () => {
   return (
     <>
       <Heading>Previous Experience</Heading>
-      <CustomRouter>
+      <PortfolioDiv>
         <RouterNav>
           <NavLink exact to="/">
             Lambda School
@@ -102,7 +102,7 @@ export default () => {
             })}
           /> */}
         </Wrapper>
-      </CustomRouter>
+      </PortfolioDiv>
     </>
   );
 };
@@ -139,8 +139,9 @@ const CustomSwitch = styled(AnimatedSwitch)`
   }
 `;
 
-const CustomRouter = styled.div`
+const PortfolioDiv = styled.div`
   display: flex;
+  margin-bottom: 3rem;
 `;
 
 const RouterNav = styled.nav`
