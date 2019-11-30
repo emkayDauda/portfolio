@@ -23,7 +23,7 @@ export default () => {
 };
 
 const HeaderDiv = styled.div`
-  margin: 3rem 0;
+  padding: 3rem 0;
   h1 {
     line-height: 1rem;
     margin: 0;

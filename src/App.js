@@ -7,6 +7,7 @@ import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import "react-bulma-components/dist/react-bulma-components.min.css";
 import Navigation from "./components/Navigation";
 import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Router>
           <Portfolio />
         </Router>
+        <Projects />
       </Body>
     </div>
   );
@@ -25,6 +27,7 @@ function App() {
 
 const Body = styled.div`
   padding: 0 2.3rem;
+  background: whitesmoke;
 `;
 
 export default App;
