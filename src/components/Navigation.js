@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Sticky from "react-headroom";
 import { Slide, Fade } from "react-reveal";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Nav = () => {
   return (
@@ -15,10 +15,18 @@ const Nav = () => {
 
         <div>
           <Slide top>
-            <FancyLink offset='100' href="#About">About</FancyLink>
-            <FancyLink offset='100' href="#Experience">Experience</FancyLink>
-            <FancyLink offset='100' href="#Projects">Projects</FancyLink>
-            <FancyLink offset='100' href="#Contact">Contact</FancyLink>
+            <FancyLink offset="100" href="#About">
+              About
+            </FancyLink>
+            <FancyLink offset="100" href="#Experience">
+              Experience
+            </FancyLink>
+            <FancyLink offset="100" href="#Projects">
+              Projects
+            </FancyLink>
+            <FancyLink offset="100" href="#Contact">
+              Contact
+            </FancyLink>
             <FancierLink href="#Resume">Resume</FancierLink>
           </Slide>
         </div>
@@ -32,17 +40,6 @@ export default () => {
     <Sticky>
       <Nav />
     </Sticky>
-    // <Sticky>
-    //   {status => {
-    //     if (status.status === Sticky.STATUS_FIXED) {
-    //       return <Nav />;
-    //     }
-    //     if (status.status === Sticky.STATUS_ORIGINAL) {
-    //       return <Nav />;
-    //     }
-    //     return <Nav />;
-    //   }}
-    // </Sticky>
   );
 };
 
@@ -70,13 +67,20 @@ const NavBody = styled.div`
 const FancyLink = styled(AnchorLink)`
   text-decoration: none;
   font-size: 1rem;
-  color: whitesmoke;
+  color: darkred;
   margin: auto 1.5rem;
-  border: 1px solid;
+  border: 1px solid darkred;
   padding: 0.1rem 0.8rem;
   border-radius: 0.3rem;
   font-weight: bold;
-  background: #251d52;
+  outline: 0;
+
+  &:hover {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    background: darkred;
+    color: white;
+  }
 `;
 
 const FancierLink = styled(FancyLink)`
