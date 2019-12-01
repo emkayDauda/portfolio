@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Sticky from "react-stickynode";
+import Sticky from "react-headroom";
 import { Slide, Fade } from "react-reveal";
 
 const Nav = () => {
@@ -29,16 +29,19 @@ const Nav = () => {
 export default () => {
   return (
     <Sticky>
-      {status => {
-        if (status.status === Sticky.STATUS_FIXED) {
-          return <Nav />;
-        }
-        if (status.status === Sticky.STATUS_ORIGINAL) {
-          return <Nav />;
-        }
-        return <Nav />;
-      }}
+      <Nav />
     </Sticky>
+    // <Sticky>
+    //   {status => {
+    //     if (status.status === Sticky.STATUS_FIXED) {
+    //       return <Nav />;
+    //     }
+    //     if (status.status === Sticky.STATUS_ORIGINAL) {
+    //       return <Nav />;
+    //     }
+    //     return <Nav />;
+    //   }}
+    // </Sticky>
   );
 };
 
@@ -48,8 +51,8 @@ const NavBody = styled.div`
   padding: 0 1.8rem;
   height: 4rem;
   align-items: center;
-  background: darkslateblue;
-  margin-bottom: 0.3rem;
+  background: whitesmoke;
+  box-shadow: 0 10px 30px -10px darkgray;
 
   img {
     margin: auto 0;
