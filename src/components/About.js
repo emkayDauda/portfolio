@@ -6,12 +6,12 @@ import { Slide } from "react-reveal";
 export default () => {
   return (
     <Slide bottom>
-      <HeaderDiv id="About">
+      <AboutDiv id="About">
         <div>
           <Heading>Why even should you talk to me?</Heading>
           <p>
             <br />I have six years of experience with the{" "}
-            <span>semi-colon.</span>
+            <span>semi-colon. </span>
             Admittedly, the first two of those were spent drifting from one{" "}
             <span>shiny new tech</span>nology to another. <br /> <br />
             These days, however, I boast proudly of a solid four years of
@@ -32,24 +32,22 @@ export default () => {
             alt="A lovely one of me"
           />
         </div>
-      </HeaderDiv>
+      </AboutDiv>
     </Slide>
   );
 };
 
-const HeaderDiv = styled.div`
+const AboutDiv = styled.div`
   display: flex;
+  justify-content: space-between;
   margin: 4rem 0;
   > div {
-    width: 50%;
-
     h1 {
       font-size: 3rem;
     }
 
     p {
       font-size: 1.7rem;
-      /* padding-right: 1rem; */
 
       span {
         color: green;
@@ -57,11 +55,9 @@ const HeaderDiv = styled.div`
     }
   }
 
-  p {
-  }
-
   img {
-    width: 100%;
+    float: right;
+    width: 80%;
     border-radius: 2rem;
   }
 `;
