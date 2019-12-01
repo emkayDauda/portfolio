@@ -10,6 +10,7 @@ import Portfolio from "./components/Portfolio";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Logo from "./utils/Splash";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -17,12 +18,12 @@ function App() {
     window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 2 * 1000);
-  });
+    }, 4 * 1000);
+  }, []);
   return (
     <>
       {loading ? (
-        <div>Waiting</div>
+        <Logo />
       ) : (
         <div>
           <Navigation />
