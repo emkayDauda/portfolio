@@ -11,7 +11,7 @@ export default () => {
       <Projects id="Projects">
         <Heading>Projects I've Worked on</Heading>
         {projects.map(p => (
-          <ProjectCard project={p} />
+          <ProjectCard id={Math.random()} project={p} />
         ))}
       </Projects>
     </Slide>

@@ -30,6 +30,9 @@ function App() {
 const Body = styled.div`
   padding: 0 2.3rem;
   background: whitesmoke;
+
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Tangerine', cursive; */
 `;
 
 export default App;

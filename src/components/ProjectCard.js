@@ -13,8 +13,8 @@ export default ({ project }) => {
       </div>
 
       <div>
-        <span>
           <Slide bottom>
+        <span>
             <a href={project.gitHubLink}>
               <h6>{project.stack}</h6>
             </a>
@@ -22,8 +22,8 @@ export default ({ project }) => {
               <Heading>{project.title}</Heading>
             </a>
             <p>{project.description}</p>
-          </Slide>
         </span>
+          </Slide>
       </div>
     </ProjectCard>
   );
