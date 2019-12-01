@@ -19,7 +19,11 @@ export default () => {
 };
 
 const Projects = styled.div`
-  margin: 3rem 0;
+  > h1 {
+    margin-top: 16rem;
+    /* line-height: 19rem; */
+  }
+  margin-bottom: 3rem;
   > div:nth-child(odd) {
     flex-direction: row-reverse;
 

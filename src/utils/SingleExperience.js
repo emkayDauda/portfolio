@@ -16,14 +16,20 @@ export default ({ companyName, companyWebsite, tagline, points }) => {
 };
 
 const ExperienceBody = styled.div`
+border: 1px solid;
+
   a {
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     color: darkred;
 
     &:hover {
       color: lightskyblue;
     }
+  }
+
+  p {
+    line-height: 1.3rem;
   }
 `;
 
@@ -31,7 +37,7 @@ const ListItem = styled.li`
     list-style: disc;
     list-style-position: inside;
     color: darkred;
-    margin: .7rem 0;
+    margin: 1.9rem 0;
 
     span {
       color: gray;
