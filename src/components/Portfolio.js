@@ -94,23 +94,6 @@ export default () => {
               />
             </CustomSwitch>
 
-            {/* <AnimatedRoute
-            path="/experience/myFlex"
-            component={() => (
-              <Experience
-                companyName="myFlex.ng"
-                companyWebsite=""
-                tagline="aTagLine"
-                points={workPoints.lambda}
-              />
-            )}
-            atEnter={{ offset: 100 }}
-            atLeave={{ offset: 100 }}
-            atActive={{ offset: 0 }}
-            mapStyles={styles => ({
-              transform: `translateX(${styles.offset}%)`
-            })}
-          /> */}
           </Wrapper>
         </div>
       </PortfolioDiv>
