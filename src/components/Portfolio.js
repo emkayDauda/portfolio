@@ -165,7 +165,6 @@ const CustomSwitch = styled(AnimatedSwitch)`
 `;
 
 const PortfolioDiv = styled.div`
-border: 1px solid;
   > div {
     display: flex;
   }

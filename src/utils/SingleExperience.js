@@ -16,7 +16,6 @@ export default ({ companyName, companyWebsite, tagline, points }) => {
 };
 
 const ExperienceBody = styled.div`
-border: 1px solid;
 
   a {
     text-decoration: none;
