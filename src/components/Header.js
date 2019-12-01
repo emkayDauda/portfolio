@@ -66,7 +66,7 @@ const HeaderDiv = styled.div`
 
   button {
     
-    border: .13rem solid turquoise;
+    border: .13rem solid darkred;
     background: none;
     font-family: "Lato", serif;
     border-radius: .3rem;
@@ -75,6 +75,8 @@ const HeaderDiv = styled.div`
 
     &:hover {
       cursor: pointer;
+      color: white;
+      background: darkred;
     }
   }
 `;
