@@ -9,83 +9,92 @@ import workPoints from "../utils/workPlacePoints";
 
 import { spring, AnimatedSwitch } from "react-router-transition";
 
+import "../utils/NavLink.css";
+
 export default () => {
   return (
     <Slide bottom>
-      <Heading id="Experience">Previous Experience</Heading>
       <PortfolioDiv>
-        <RouterNav>
-          <NavLink exact to="/">
-            Lambda School
-          </NavLink>
+        <Heading id="Experience">Previous Experience</Heading>
+        <div>
+          <RouterNav>
+            <StyledLink activeClassName="active" exact to="/">
+              Lambda School
+            </StyledLink>
 
-          <NavLink to="/experience/myFlex">myFlex.ng</NavLink>
-          <NavLink to="/experience/jhaki">Jhaki</NavLink>
-          <NavLink to="/experience/hng">Hotels.ng</NavLink>
-        </RouterNav>
-        <Wrapper>
-          <CustomSwitch
-            atEnter={bounceTransition.atEnter}
-            atLeave={bounceTransition.atLeave}
-            atActive={bounceTransition.atActive}
-            mapStyles={styles => {
-              return {
-                opacity: styles.opacity,
-                transform: `scale(${styles.scale})`
-              };
-            }}
-          >
-            <Route
-              exact
-              path="/"
-              render={() => (
-                <Experience
-                  companyName="Lambda School"
-                  companyWebsite="https://www.lambdaschool.com"
-                  tagline="aTagLine"
-                  points={workPoints.lambda}
-                />
-              )}
-            />
+            <StyledLink activeClassName="active" to="/experience/myFlex">
+              myFlex.ng
+            </StyledLink>
+            <StyledLink activeClassName="active" to="/experience/jhaki">
+              Jhaki
+            </StyledLink>
+            <StyledLink activeClassName="active" to="/experience/hng">
+              Hotels.ng
+            </StyledLink>
+          </RouterNav>
+          <Wrapper>
+            <CustomSwitch
+              atEnter={bounceTransition.atEnter}
+              atLeave={bounceTransition.atLeave}
+              atActive={bounceTransition.atActive}
+              mapStyles={styles => {
+                return {
+                  opacity: styles.opacity,
+                  transform: `scale(${styles.scale})`
+                };
+              }}
+            >
+              <Route
+                exact
+                path="/"
+                render={() => (
+                  <Experience
+                    companyName="Lambda School"
+                    companyWebsite="https://www.lambdaschool.com"
+                    tagline="aTagLine"
+                    points={workPoints.lambda}
+                  />
+                )}
+              />
 
-            <Route
-              path="/experience/myFlex"
-              render={() => (
-                <Experience
-                  companyName="myFlex.ng"
-                  companyWebsite="https://www.myflex.ng"
-                  tagline="aTagLine"
-                  points={workPoints.lambda}
-                />
-              )}
-            />
+              <Route
+                path="/experience/myFlex"
+                render={() => (
+                  <Experience
+                    companyName="myFlex.ng"
+                    companyWebsite="https://www.myflex.ng"
+                    tagline="aTagLine"
+                    points={workPoints.myflex}
+                  />
+                )}
+              />
 
-            <Route
-              path="/experience/jhaki"
-              render={() => (
-                <Experience
-                  companyName="Jhaki"
-                  companyWebsite="https://www.jhaki.com"
-                  tagline="aTagLine"
-                  points={workPoints.lambda}
-                />
-              )}
-            />
+              <Route
+                path="/experience/jhaki"
+                render={() => (
+                  <Experience
+                    companyName="Jhaki"
+                    companyWebsite="https://www.jhaki.com"
+                    tagline="aTagLine"
+                    points={workPoints.lambda}
+                  />
+                )}
+              />
 
-            <Route
-              path="/experience/hng"
-              render={() => (
-                <Experience
-                  companyName="Hotels.ng"
-                  companyWebsite="https://www.hotels.ng"
-                  tagline="aTagLine"
-                  points={workPoints.lambda}
-                />
-              )}
-            />
-          </CustomSwitch>
+              <Route
+                path="/experience/hng"
+                render={() => (
+                  <Experience
+                    companyName="Hotels.ng"
+                    companyWebsite="https://www.hotels.ng"
+                    tagline="aTagLine"
+                    points={workPoints.lambda}
+                  />
+                )}
+              />
+            </CustomSwitch>
 
-          {/* <AnimatedRoute
+            {/* <AnimatedRoute
             path="/experience/myFlex"
             component={() => (
               <Experience
@@ -102,7 +111,8 @@ export default () => {
               transform: `translateX(${styles.offset}%)`
             })}
           /> */}
-        </Wrapper>
+          </Wrapper>
+        </div>
       </PortfolioDiv>
     </Slide>
   );
@@ -133,6 +143,20 @@ const bounceTransition = {
   }
 };
 
+const StyledLink = styled(NavLink)`
+  border-left: 2px solid darkred;
+  padding-bottom: 0;
+  /* line-height:0; */
+  padding: 1rem 0.5rem;
+  outline: 0;
+  &:hover {
+    background: darkred;
+    color: white;
+    -webkit-transition-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    transition-duration: 0.5s;
+  }
+`;
+
 const CustomSwitch = styled(AnimatedSwitch)`
   position: relative;
   > div {
@@ -141,18 +165,17 @@ const CustomSwitch = styled(AnimatedSwitch)`
 `;
 
 const PortfolioDiv = styled.div`
-  display: flex;
-  margin-bottom: 3rem;
+  > div {
+    display: flex;
+  }
+  margin: 9rem;
 `;
 
 const RouterNav = styled.nav`
   display: flex;
   flex-direction: column;
   width: 25%;
-
-  a {
-    padding: 1.4rem 0;
-  }
+  margin-right: 4rem;
 `;
 
 const Wrapper = styled.div`
