@@ -19,15 +19,7 @@ export default () => {
 };
 
 const Projects = styled.div`
-  img {
-    align-self: flex-end;
-  }
-
-  span {
-    width: 70%;
-    text-align: center;
-    justify-self: center;
-  }
+  margin: 3rem 0;
   > div:nth-child(odd) {
     flex-direction: row-reverse;
 
@@ -39,5 +31,4 @@ const Projects = styled.div`
       margin-right: 0;
     }
   }
-  margin: 3rem 0;
 `;

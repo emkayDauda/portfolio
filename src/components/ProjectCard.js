@@ -49,6 +49,14 @@ const ProjectCard = styled.div`
     border-radius: 1.5rem;
     /* align-self: flex-start; */
     border: 3px solid lightgray;
+    align-self: flex-end;
+
+  }
+
+  span {
+    width: 70%;
+    text-align: center;
+    justify-self: center;
   }
 
   p {
