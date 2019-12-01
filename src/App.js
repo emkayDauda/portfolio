@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import About from "./components/About";
 import Header from "./components/Header";
 import styled from "styled-components";
@@ -12,20 +12,33 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2 * 1000);
+  });
   return (
-    <div>
-      <Navigation />
-      <Body>
-        <Header />
-        <About />
-        <Router>
-          <Portfolio />
-        </Router>
-        <Projects />
-        <Contact />
-      </Body>
-      <Footer />
-    </div>
+    <>
+      {loading ? (
+        <div>Waiting</div>
+      ) : (
+        <div>
+          <Navigation />
+          <Body>
+            <Header />
+            <About />
+            <Router>
+              <Portfolio />
+            </Router>
+            <Projects />
+            <Contact />
+          </Body>
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
 
