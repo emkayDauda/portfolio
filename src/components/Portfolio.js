@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink, Route } from "react-router-dom";
 import { Heading } from "react-bulma-components";
+import { Slide } from "react-reveal";
 
 import Experience from "../utils/SingleExperience";
 import workPoints from "../utils/workPlacePoints";
@@ -10,7 +11,7 @@ import { spring, AnimatedSwitch } from "react-router-transition";
 
 export default () => {
   return (
-    <>
+    <Slide bottom>
       <Heading>Previous Experience</Heading>
       <PortfolioDiv>
         <RouterNav>
@@ -103,7 +104,7 @@ export default () => {
           /> */}
         </Wrapper>
       </PortfolioDiv>
-    </>
+    </Slide>
   );
 };
 

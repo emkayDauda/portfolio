@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Heading, Button } from "react-bulma-components";
+import { Slide } from "react-reveal";
 
 export default () => {
   return (
-    <HeaderDiv>
+    <Slide bottom>
+      <HeaderDiv>
       <h5>
         H<span>i</span> there. <span>I</span> am
       </h5>
@@ -19,6 +21,7 @@ export default () => {
 
       <Button color='primary' >Get In Touch</Button >
     </HeaderDiv>
+    </Slide>
   );
 };
 

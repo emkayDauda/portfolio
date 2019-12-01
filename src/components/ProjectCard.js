@@ -1,23 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "react-bulma-components";
+import { Slide } from "react-reveal";
 
 export default ({ project }) => {
   return (
     <ProjectCard>
       <div>
-        <img src={project.image} alt="screenshot of a  project I worked on" />
+        <Slide bottom>
+          <img src={project.image} alt="screenshot of a  project I worked on" />
+        </Slide>
       </div>
 
       <div>
         <span>
-          <a href={project.gitHubLink}>
-            <h6>{project.stack}</h6>
-          </a>
-          <a href={project.hostedSite}>
-            <Heading>{project.title}</Heading>
-          </a>
-          <p>{project.description}</p>
+          <Slide bottom>
+            <a href={project.gitHubLink}>
+              <h6>{project.stack}</h6>
+            </a>
+            <a href={project.hostedSite}>
+              <Heading>{project.title}</Heading>
+            </a>
+            <p>{project.description}</p>
+          </Slide>
         </span>
       </div>
     </ProjectCard>

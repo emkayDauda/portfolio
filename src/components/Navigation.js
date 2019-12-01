@@ -1,23 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import Sticky from "react-stickynode";
+import { Slide, Fade } from "react-reveal";
 
 const Nav = () => {
   return (
-    <NavBody>
-      <img
-        src="https://res.cloudinary.com/emkaydauda/image/upload/c_fill,h_3024,w_3024/v1574869041/IMG_1752.jpg"
-        alt="A lovely one of me"
-      />
+    <Fade>
+      <NavBody>
+        <img
+          src="https://res.cloudinary.com/emkaydauda/image/upload/c_fill,h_3024,w_3024/v1574869041/IMG_1752.jpg"
+          alt="A lovely one of me"
+        />
 
-      <div>
-        <FancyLink href="#">About</FancyLink>
-        <FancyLink href="#">Experience</FancyLink>
-        <FancyLink href="#">Projects</FancyLink>
-        <FancyLink href="#">Contact</FancyLink>
-        <FancierLink href="#">Resume</FancierLink>
-      </div>
-    </NavBody>
+        <div>
+          <Slide top>
+            <FancyLink href="#">About</FancyLink>
+            <FancyLink href="#">Experience</FancyLink>
+            <FancyLink href="#">Projects</FancyLink>
+            <FancyLink href="#">Contact</FancyLink>
+            <FancierLink href="#">Resume</FancierLink>
+          </Slide>
+        </div>
+      </NavBody>
+    </Fade>
   );
 };
 
@@ -53,6 +58,7 @@ const NavBody = styled.div`
   }
 
   div {
+    display: flex;
     justify-content: space-between;
   }
 `;
