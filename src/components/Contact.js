@@ -5,7 +5,7 @@ import { Slide } from "react-reveal";
 export default () => {
   return (
     <Slide bottom>
-      <ContactSection>
+      <ContactSection id="Contact">
         <Heading>
           Convinced? <span>Hit me up...</span>
         </Heading>

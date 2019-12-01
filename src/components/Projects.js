@@ -8,7 +8,7 @@ import { Slide } from "react-reveal";
 export default () => {
   return (
     <Slide bottom>
-      <Projects>
+      <Projects id="Projects">
         <Heading>Projects I've Worked on</Heading>
         {projects.map(p => (
           <ProjectCard project={p} />

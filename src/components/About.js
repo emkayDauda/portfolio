@@ -6,7 +6,7 @@ import { Slide } from "react-reveal";
 export default () => {
   return (
     <Slide bottom>
-      <HeaderDiv>
+      <HeaderDiv id="About">
         <div>
           <Heading>Why even should you talk to me?</Heading>
           <p>

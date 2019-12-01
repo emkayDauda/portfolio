@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Sticky from "react-headroom";
 import { Slide, Fade } from "react-reveal";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Nav = () => {
   return (
@@ -14,11 +15,11 @@ const Nav = () => {
 
         <div>
           <Slide top>
-            <FancyLink href="#">About</FancyLink>
-            <FancyLink href="#">Experience</FancyLink>
-            <FancyLink href="#">Projects</FancyLink>
-            <FancyLink href="#">Contact</FancyLink>
-            <FancierLink href="#">Resume</FancierLink>
+            <FancyLink offset='100' href="#About">About</FancyLink>
+            <FancyLink offset='100' href="#Experience">Experience</FancyLink>
+            <FancyLink offset='100' href="#Projects">Projects</FancyLink>
+            <FancyLink offset='100' href="#Contact">Contact</FancyLink>
+            <FancierLink href="#Resume">Resume</FancierLink>
           </Slide>
         </div>
       </NavBody>
@@ -66,7 +67,7 @@ const NavBody = styled.div`
   }
 `;
 
-const FancyLink = styled.a`
+const FancyLink = styled(AnchorLink)`
   text-decoration: none;
   font-size: 1rem;
   color: whitesmoke;
