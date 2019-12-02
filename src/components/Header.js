@@ -6,16 +6,16 @@ export default () => {
   return (
     <Slide bottom>
       <HeaderDiv>
-        <h5>
+        <h2>
           H<span>i</span> there{" "}
           <span role="img" aria-label="hand-waving">
             👋🏽
           </span>
           . My <span>name</span> is
-        </h5>
+        </h2>
         <h4>Maaruf Dauda.</h4>
         <h5>
-          I build <span>stuff</span> for the web and your phone.
+          <span>I build stuff for the web and your phone.</span>
         </h5>
         <p>
           I craft beautiful Android apps with the best programming language to
@@ -25,7 +25,9 @@ export default () => {
           School, along with principles of Data Science.
         </p>
 
-        <a href='mailto:mkdauda.work@gmail.com' ><button>Get In Touch</button></a>
+        <a href="mailto:mkdauda.work@gmail.com">
+          <button>Get In Touch</button>
+        </a>
       </HeaderDiv>
     </Slide>
   );
@@ -34,11 +36,10 @@ export default () => {
 const HeaderDiv = styled.div`
   padding: 3rem 0;
   margin-bottom: 7rem;
-  h1 {
-    line-height: 1rem;
-    margin: 0;
-    padding: 0;
 
+  h2 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
   }
 
   h4 {
@@ -60,23 +61,44 @@ const HeaderDiv = styled.div`
 
   p {
     width: 35%;
-    padding-right: 3.5rem;
+    /* padding-right: 3.5rem; */
     margin: 1.6rem 0;
   }
 
   button {
-    
-    border: .13rem solid darkred;
+    border: 0.13rem solid darkred;
     background: none;
     font-family: "Lato", serif;
-    border-radius: .3rem;
-    padding: 1.4rem 1.6rem;
+    border-radius: 0.3rem;
+    padding: 1.4rem 2.4rem;
     margin: 2.7rem 0;
 
     &:hover {
       cursor: pointer;
       color: white;
       background: darkred;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
+      width: 70%;
+    }
+
+    button {
+      margin: 2.7rem auto;
+      justify-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    p {
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 2.5rem;
+      line-height: 2.4rem;
     }
   }
 `;
