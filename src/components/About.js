@@ -42,6 +42,10 @@ const AboutDiv = styled.div`
   justify-content: space-between;
   margin: 4rem 0;
   > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1 {
       font-size: 3rem;
     }
@@ -56,8 +60,38 @@ const AboutDiv = styled.div`
   }
 
   img {
-    float: right;
     width: 80%;
     border-radius: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    > div {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+    img {
+      margin: 2rem 0;
+      width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    > div {
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    img {
+      margin: 2rem 0;
+      width: 60%;
+    }
   }
 `;
