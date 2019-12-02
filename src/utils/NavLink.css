@@ -3,3 +3,10 @@
     border-left: 2px solid darkseagreen;
 
 }
+
+@media only screen and (max-width: 500px){
+    .active {
+        border-top: 2px solid darkseagreen;
+        border-left: none;
+    }
+}

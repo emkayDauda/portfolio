@@ -93,7 +93,6 @@ export default () => {
                 )}
               />
             </CustomSwitch>
-
           </Wrapper>
         </div>
       </PortfolioDiv>
@@ -126,10 +125,51 @@ const bounceTransition = {
   }
 };
 
+const PortfolioDiv = styled.div`
+  > div {
+    display: flex;
+  }
+  margin: 9rem;
+
+  @media only screen and (max-width: 768px) {
+    margin: 9rem 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    > div {
+      position: relative;
+      flex-direction: column;
+    }
+  }
+`;
+
+const RouterNav = styled.nav`
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 4rem;
+
+  @media only screen and (max-width: 500px) {
+    flex-direction: row;
+    width: calc(100% + 4.4rem);
+    max-height: 100%;
+    overflow-x: auto;
+    margin: 0 -2.3rem;
+
+    a {
+      &:first-of-type {
+        margin-left: 0.5rem;
+      }
+      &:last-of-type {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+`;
+
 const StyledLink = styled(NavLink)`
   border-left: 2px solid darkred;
   padding-bottom: 0;
-  /* line-height:0; */
   padding: 1rem 0.5rem;
   outline: 0;
   &:hover {
@@ -138,27 +178,25 @@ const StyledLink = styled(NavLink)`
     -webkit-transition-duration: 0.5s; /* Safari 4.0 - 8.0 */
     transition-duration: 0.5s;
   }
+
+  @media only screen and (max-width: 500px) {
+    border-top: 2px solid darkred;
+    border-left: none;
+    width: max-content;
+    word-wrap: none;
+    white-space: nowrap;
+    line-height: 1rem;
+
+    padding: 1rem 2rem 1.5rem;
+  }
 `;
 
 const CustomSwitch = styled(AnimatedSwitch)`
   position: relative;
+  min-height: 30rem;
   > div {
     position: absolute;
   }
-`;
-
-const PortfolioDiv = styled.div`
-  > div {
-    display: flex;
-  }
-  margin: 9rem;
-`;
-
-const RouterNav = styled.nav`
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  margin-right: 4rem;
 `;
 
 const Wrapper = styled.div`
