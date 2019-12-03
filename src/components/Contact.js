@@ -49,19 +49,32 @@ const ContactSection = styled.div`
 
   a {
     margin: 2.7rem 0;
-  }
-  button {
-    border: 0.13rem solid darkred;
-    background: none;
-    font-family: "Lato", serif;
-    border-radius: 0.3rem;
-    padding: 1.4rem 1.6rem;
-    /* margin: 2.7rem auto; */
+    button {
+      border: 0.13rem solid darkred;
+      background: none;
+      font-family: "Lato", serif;
+      border-radius: 0.3rem;
+      padding: 1.4rem 1.6rem;
+      /* margin: 2.7rem auto; */
 
-    &:hover {
-      cursor: pointer;
-      color: white;
-      background: darkred;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background: darkred;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    p {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    p {
+      width: 100%;
+      margin: 0 -2rem;
     }
   }
 `;
