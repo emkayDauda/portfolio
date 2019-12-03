@@ -15,15 +15,15 @@ import Logo from "./utils/Splash";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 0 * 1000);
+    }, 4 * 1000);
   }, []);
   return (
     <>
       {loading ? (
-        <div />
+        <Logo />
       ) : (
         <div>
           <Navigation />

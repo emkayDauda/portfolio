@@ -129,10 +129,10 @@ const PortfolioDiv = styled.div`
   > div {
     display: flex;
   }
-  margin: 9rem;
+  margin: 7rem 9rem 5.5rem;
 
   @media only screen and (max-width: 768px) {
-    margin: 9rem 0;
+    margin: 7rem 0rem 5.5rem;
   }
 
   @media only screen and (max-width: 500px) {
