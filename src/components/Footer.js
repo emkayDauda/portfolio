@@ -56,7 +56,7 @@ const FooterDiv = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem 0;
+  padding: 1.2rem 0 0;
 
   > div {
     width: 40%;
