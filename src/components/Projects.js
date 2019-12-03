@@ -28,4 +28,10 @@ const Projects = styled.div`
       margin-right: 0;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    > div:nth-child(odd){
+      flex-direction: column-reverse;
+    }
+  }
 `;

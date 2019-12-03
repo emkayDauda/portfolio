@@ -13,8 +13,8 @@ export default ({ project }) => {
       </div>
 
       <div>
-          <Slide bottom>
-        <span>
+        <Slide bottom>
+          <span>
             <a href={project.gitHubLink}>
               <h6>{project.stack}</h6>
             </a>
@@ -22,8 +22,8 @@ export default ({ project }) => {
               <Heading>{project.title}</Heading>
             </a>
             <p>{project.description}</p>
-        </span>
-          </Slide>
+          </span>
+        </Slide>
       </div>
     </ProjectCard>
   );
@@ -38,30 +38,67 @@ const ProjectCard = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    /* align-items: center; */
     padding: 0 2.3rem;
-    /* height: 100%; */
-    /* margin: 0 auto; */
-  }
-  img {
-    height: 70%;
-    width: 70%;
-    border-radius: 1.5rem;
-    /* align-self: flex-start; */
-    border: 3px solid lightgray;
-    align-self: flex-end;
 
+    img {
+      height: 70%;
+      width: 70%;
+      border-radius: 1.5rem;
+      border: 3px solid lightgray;
+      align-self: flex-end;
+    }
+
+    span {
+      width: 70%;
+      text-align: center;
+      justify-self: center;
+
+      p {
+        font-size: 1.7rem;
+        text-align: center;
+      }
+    }
   }
 
-  span {
-    width: 70%;
-    text-align: center;
-    justify-self: center;
+  @media only screen and (max-width: 768px) {
+    div {
+      img {
+        width: 100%;
+        height: 80%;
+      }
+
+      span {
+        width: 100%;
+        height: 70%;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 
-  p {
-    font-size: 1.7rem;
-    /* width: 70%; */
-    text-align: center;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column-reverse;
+    margin: 0 -1.5rem;
+
+    div {
+      /* border: 1px solid; */
+      width: 100%;
+      padding: 0;
+      img {
+        width: 100%;
+        height: 80%;
+      }
+
+      span {
+        width: 100%;
+        height: 70%;
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 `;
