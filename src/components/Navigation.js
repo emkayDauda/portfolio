@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Sticky from "react-headroom";
 import { Slide, Fade } from "react-reveal";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { reveal as Menu } from "react-burger-menu";
 
 const Nav = () => {
   return (
@@ -62,6 +63,10 @@ const NavBody = styled.div`
     display: flex;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const FancyLink = styled(AnchorLink)`
@@ -81,8 +86,36 @@ const FancyLink = styled(AnchorLink)`
     background: darkred;
     color: white;
   }
+
+  @media only screen and (max-width) {
+  }
 `;
 
 const FancierLink = styled(FancyLink)`
   padding: 0.5rem 0.8rem;
 `;
+const NavLinks = styled.nav`
+  display: flex;
+  flex-direction: column;
+`;
+export const BurgerMenu = props => {
+  return (
+    <NavLinks>
+      <Menu {...props} right >
+        <FancyLink offset="100" href="#About">
+          About
+        </FancyLink>
+        <FancyLink offset="100" href="#Experience">
+          Experience
+        </FancyLink>
+        <FancyLink offset="100" href="#Projects">
+          Projects
+        </FancyLink>
+        <FancyLink offset="100" href="#Contact">
+          Contact
+        </FancyLink>
+        <FancierLink href="#Resume">Resume</FancierLink>
+      </Menu>
+    </NavLinks>
+  );
+};

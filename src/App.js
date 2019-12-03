@@ -5,12 +5,14 @@ import styled from "styled-components";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import "react-bulma-components/dist/react-bulma-components.min.css";
-import Navigation from "./components/Navigation";
+import Navigation, { BurgerMenu } from "./components/Navigation";
 import Portfolio from "./components/Portfolio";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Logo from "./utils/Splash";
+
+import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,9 +27,13 @@ function App() {
       {loading ? (
         <Logo />
       ) : (
-        <div>
+        <div id="outer-container" style={{ height: "100% " }}>
           <Navigation />
-          <Body>
+          <BurgerMenu
+            pageWrapId={"page-wrap"}
+            outerContainerId={"outer-container"}
+          />
+          <Body id="page-wrap">
             <Header />
             <About />
             <Router>
