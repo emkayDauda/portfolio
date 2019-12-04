@@ -99,22 +99,42 @@ const NavLinks = styled.nav`
   flex-direction: column;
 `;
 export const BurgerMenu = props => {
+  const setMenuOpen = props.setMenuOpen;
+  // delete props.setMenuOpen
   return (
     <NavLinks>
-      <Menu {...props} right >
-        <FancyLink offset="100" href="#About">
+      <Menu {...props} right>
+        <FancyLink
+          onClick={() => setMenuOpen(false)}
+          offset="100"
+          href="#About"
+        >
           About
         </FancyLink>
-        <FancyLink offset="100" href="#Experience">
+        <FancyLink
+          onClick={() => setMenuOpen(false)}
+          offset="100"
+          href="#Experience"
+        >
           Experience
         </FancyLink>
-        <FancyLink offset="100" href="#Projects">
+        <FancyLink
+          onClick={() => setMenuOpen(false)}
+          offset="100"
+          href="#Projects"
+        >
           Projects
         </FancyLink>
-        <FancyLink offset="100" href="#Contact">
+        <FancyLink
+          onClick={() => setMenuOpen(false)}
+          offset="100"
+          href="#Contact"
+        >
           Contact
         </FancyLink>
-        <FancierLink href="#Resume">Resume</FancierLink>
+        <FancierLink onClick={() => setMenuOpen(false)} href="#Resume">
+          Resume
+        </FancierLink>
       </Menu>
     </NavLinks>
   );

@@ -11,11 +11,28 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Logo from "./utils/Splash";
+import { useSwipeable } from "react-swipeable";
 
 import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const config = {
+    delta: 10, // min distance(px) before a swipe starts
+    preventDefaultTouchmoveEvent: true, // preventDefault on touchmove, *See Details*
+    trackTouch: true, // track touch input
+    trackMouse: false, // track mouse input
+    rotationAngle: 0 // set a rotation angle
+  };
+  const [menuOpen, setMenuOpen] = useState(false);
+  const openMenu = () => {
+    if (!menuOpen) setMenuOpen(true);
+  };
+  const handlers = useSwipeable({
+    onSwipedLeft: () => openMenu(),
+    ...config
+  });
+
   useEffect(() => {
     window.scrollTo(0, 0);
     setTimeout(() => {
@@ -30,10 +47,13 @@ function App() {
         <div id="outer-container" style={{ height: "100% " }}>
           <Navigation />
           <BurgerMenu
+            setMenuOpen={setMenuOpen}
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
+            isOpen={menuOpen}
+            onStateChange={state => setMenuOpen(state.isOpen)}
           />
-          <Body id="page-wrap">
+          <Body id="page-wrap" {...handlers}>
             <Header />
             <About />
             <Router>
