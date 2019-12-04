@@ -4,6 +4,7 @@ import Sticky from "react-headroom";
 import { Slide, Fade } from "react-reveal";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { reveal as Menu } from "react-burger-menu";
+import Logo from "../utils/Splash";
 
 const Nav = () => {
   return (
@@ -87,7 +88,10 @@ const FancyLink = styled(AnchorLink)`
     color: white;
   }
 
-  @media only screen and (max-width) {
+  @media only screen and (max-width: 800px) {
+    padding: 0.3rem 0.1rem;
+    margin: 1rem 0.3rem;
+    text-align: center;
   }
 `;
 
@@ -97,13 +101,23 @@ const FancierLink = styled(FancyLink)`
 const NavLinks = styled.nav`
   display: flex;
   flex-direction: column;
+  /* align-items: flex-end; */
+`;
+
+const Header = styled.header`
+  height: 40%;
+  /* background: darkred; */
+  margin: 0 -2rem;
+  /* border-radius: 3rem; */
 `;
 export const BurgerMenu = props => {
   const setMenuOpen = props.setMenuOpen;
-  // delete props.setMenuOpen
   return (
     <NavLinks>
-      <Menu {...props} right>
+      <Menu width={"90%"} {...props} right>
+        <Header>
+          <Logo />
+        </Header>
         <FancyLink
           onClick={() => setMenuOpen(false)}
           offset="100"

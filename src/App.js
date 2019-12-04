@@ -42,7 +42,9 @@ function App() {
   return (
     <>
       {loading ? (
-        <Logo />
+        <div style={{'height': '100vh'}} >
+          <Logo />
+        </div>
       ) : (
         <div id="outer-container" style={{ height: "100% " }}>
           <Navigation />
