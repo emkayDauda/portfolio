@@ -114,7 +114,7 @@ export const BurgerMenu = props => {
   const setMenuOpen = props.setMenuOpen;
   return (
     <NavLinks>
-      <Menu width={"90%"} {...props} right>
+      <Menu {...props} right>
         <Header>
           <Logo />
         </Header>
