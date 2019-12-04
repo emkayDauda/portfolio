@@ -75,6 +75,10 @@ const Body = styled.div`
   padding: 0 2.3rem;
   background: whitesmoke;
 
+  a {
+    outline: none;
+  }
+
   /* font-family: 'Lato', sans-serif; */
   /* font-family: 'Tangerine', cursive; */
 `;

@@ -41,7 +41,8 @@ const ProjectCard = styled.div`
     padding: 0 2.3rem;
 
     img {
-      height: 70%;
+      height: 25rem;
+      margin: 3rem 0;
       width: 70%;
       border-radius: 1.5rem;
       border: 3px solid lightgray;
