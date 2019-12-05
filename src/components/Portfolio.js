@@ -153,7 +153,7 @@ const RouterNav = styled.nav`
     flex-direction: row;
     width: calc(100% + 4.4rem);
     max-height: 100%;
-    overflow-x: scroll;
+    overflow-x: scroll !important;
     margin: 0 -2.3rem;
 
     a {

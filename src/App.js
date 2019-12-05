@@ -20,7 +20,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const config = {
-    delta: 25, // min distance(px) before a swipe starts
+    delta: 130, // min distance(px) before a swipe starts
     preventDefaultTouchmoveEvent: true, // preventDefault on touchmove, *See Details*
     trackTouch: true, // track touch input
     trackMouse: false, // track mouse input
