@@ -76,7 +76,7 @@ export default () => {
                     companyName="Jhaki"
                     companyWebsite="https://www.jhaki.com"
                     tagline="aTagLine"
-                    points={workPoints.lambda}
+                    points={workPoints.jhaki}
                   />
                 )}
               />
@@ -88,7 +88,7 @@ export default () => {
                     companyName="Hotels.ng"
                     companyWebsite="https://www.hotels.ng"
                     tagline="aTagLine"
-                    points={workPoints.lambda}
+                    points={workPoints.hng}
                   />
                 )}
               />
