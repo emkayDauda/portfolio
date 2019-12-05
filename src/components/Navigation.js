@@ -6,6 +6,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { reveal as Menu } from "react-burger-menu";
 import Splash from "../utils/Splash";
 import Logo from "../assets/logo192.png";
+
+import resume from "../assets/Maaruf_Dauda_Resume.pdf";
 const Nav = () => {
   return (
     <Fade>
@@ -28,7 +30,13 @@ const Nav = () => {
             <FancyLink offset="100" href="#Contact">
               Contact
             </FancyLink>
-            <FancierLink href="#Resume">Resume</FancierLink>
+            <FancyAnchor
+              href={resume}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+            >
+              Resume
+            </FancyAnchor>
           </Slide>
         </div>
       </NavBody>
@@ -70,6 +78,31 @@ const NavBody = styled.div`
 `;
 
 const FancyLink = styled(AnchorLink)`
+  text-decoration: none;
+  font-size: 1rem;
+  color: darkred;
+  margin: auto 1.5rem;
+  border: 1px solid darkred;
+  padding: 0.1rem 0.8rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  outline: 0;
+
+  &:hover {
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    background: darkred;
+    color: white;
+  }
+
+  @media only screen and (max-width: 800px) {
+    padding: 0.3rem 0.1rem;
+    margin: 1rem 0.3rem;
+    text-align: center;
+  }
+`;
+
+const FancyAnchor = styled.a`
   text-decoration: none;
   font-size: 1rem;
   color: darkred;
