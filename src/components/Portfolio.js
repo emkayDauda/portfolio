@@ -51,7 +51,7 @@ export default () => {
                   <Experience
                     companyName="Lambda School"
                     companyWebsite="https://www.lambdaschool.com"
-                    tagline="aTagLine"
+                    tagline="August, 2019 - Present"
                     points={workPoints.lambda}
                   />
                 )}
@@ -63,7 +63,7 @@ export default () => {
                   <Experience
                     companyName="myFlex.ng"
                     companyWebsite="https://www.myflex.ng"
-                    tagline="aTagLine"
+                    tagline="July, 2019 - Present"
                     points={workPoints.myflex}
                   />
                 )}
@@ -75,7 +75,7 @@ export default () => {
                   <Experience
                     companyName="Jhaki"
                     companyWebsite="https://www.jhaki.com"
-                    tagline="aTagLine"
+                    tagline="February, 2019 - June, 2019"
                     points={workPoints.jhaki}
                   />
                 )}
@@ -87,7 +87,7 @@ export default () => {
                   <Experience
                     companyName="Hotels.ng"
                     companyWebsite="https://www.hotels.ng"
-                    tagline="aTagLine"
+                    tagline="March, 2019 - May, 2019  "
                     points={workPoints.hng}
                   />
                 )}
