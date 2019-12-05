@@ -17,6 +17,8 @@ import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const config = {
     delta: 10, // min distance(px) before a swipe starts
     preventDefaultTouchmoveEvent: true, // preventDefault on touchmove, *See Details*
@@ -24,10 +26,11 @@ function App() {
     trackMouse: false, // track mouse input
     rotationAngle: 0 // set a rotation angle
   };
-  const [menuOpen, setMenuOpen] = useState(false);
+
   const openMenu = () => {
     if (!menuOpen) setMenuOpen(true);
   };
+
   const handlers = useSwipeable({
     onSwipedLeft: () => openMenu(),
     ...config
@@ -37,8 +40,9 @@ function App() {
     window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 4 * 1000);
+    }, 0 * 1000);
   }, []);
+
   return (
     <>
       {loading ? (
