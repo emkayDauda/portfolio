@@ -7,7 +7,7 @@ export default () => {
     <Slide bottom>
       <ContactSection id="Contact">
         <Heading>
-          Convinced? <span>Hit me up...</span>
+          Wanna chat? <span>Hit me up...</span>
         </Heading>
         <p>
           I am currently open for contract or freelance opportunities on
@@ -34,7 +34,7 @@ const ContactSection = styled.div`
     text-align: center;
 
     span {
-      color: darkred;
+      color: darkseagreen;
       font-size: 1.2rem;
       margin-left: 0.5rem;
     }

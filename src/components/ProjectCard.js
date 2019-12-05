@@ -58,6 +58,18 @@ const ProjectCard = styled.div`
         font-size: 1.7rem;
         text-align: center;
       }
+
+      h1 {
+        color: darkred;
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+
+        &:hover {
+          color: darkseagreen;
+          transition-duration: 0.3s;
+          -webkit-transition-duration: 0.3s;
+        }
+      }
     }
   }
 
