@@ -4,16 +4,15 @@ import Sticky from "react-headroom";
 import { Slide, Fade } from "react-reveal";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { reveal as Menu } from "react-burger-menu";
-import Logo from "../utils/Splash";
-
+import Splash from "../utils/Splash";
+import Logo from "../assets/logo192.png";
 const Nav = () => {
   return (
     <Fade>
       <NavBody>
-        <img
-          src="https://res.cloudinary.com/emkaydauda/image/upload/c_fill,h_3024,w_3024/v1574869041/IMG_1752.jpg"
-          alt="A lovely one of me"
-        />
+        <a href="/" title="Home">
+          <img src={Logo} alt="A lovely one of me" />
+        </a>
 
         <div>
           <Slide top>
@@ -116,7 +115,7 @@ export const BurgerMenu = props => {
     <NavLinks>
       <Menu {...props} right>
         <Header>
-          <Logo />
+          <Splash />
         </Header>
         <FancyLink
           onClick={() => setMenuOpen(false)}
