@@ -16,9 +16,8 @@ export default () => {
             <span>shiny new tech</span>nology to another. <br /> <br />
             These days, however, I boast proudly of a solid four years of
             experience with <span>Native Android Development</span>, two years
-            of experience of experience with{" "}
-            <span>Hybrid Mobile (Flutter) Development </span>
-            and almost one year of experience with <span>
+            of experience with <span>Hybrid Mobile (Flutter) Development </span>
+            and about six months of experience with <span>
               Full-Stack Web
             </span>{" "}
             technologies which I've just happened to pick up at{" "}

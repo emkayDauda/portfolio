@@ -19,7 +19,7 @@ export default () => {
         </h5>
         <p>
           I craft beautiful Android apps with the best programming language to
-          ever grace our plane, Kotlin. I can use Java too, if you insist.{" "}
+          ever grace our planet, Kotlin. I can use Java too, if you insist.{" "}
           <br />
           <br /> These days, I am learning Full-Stack Web Development at Lambda
           School, along with principles of Data Science.
