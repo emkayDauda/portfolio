@@ -27,7 +27,7 @@ export default () => {
 
         <div>
           <img
-            src="https://res.cloudinary.com/emkaydauda/image/upload/c_fill,e_grayscale,h_2900,q_100,w_3024/v1574869041/IMG_1752.jpg"
+            src="https://res.cloudinary.com/emkaydauda/image/upload/q_100/v1575714148/big_smile.jpg"
             alt="A lovely one of me"
           />
         </div>
