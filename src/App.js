@@ -40,7 +40,7 @@ function App() {
     window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 4 * 1000);
+    }, 0 * 1000);
   }, []);
 
   return (
