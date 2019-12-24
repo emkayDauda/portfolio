@@ -63,7 +63,7 @@ export default () => {
                   <Experience
                     companyName="myFlex.ng"
                     companyWebsite="https://www.myflex.ng"
-                    tagline="July, 2019 - Present"
+                    tagline="July, 2019 - December, 2019"
                     points={workPoints.myflex}
                   />
                 )}
