@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDev } from "@fortawesome/free-brands-svg-icons";
+
 import { Slide } from "react-reveal";
 import facebook from "./FooterIcons/004-facebook.svg";
 import linkedin from "./FooterIcons/003-linkedin.svg";
@@ -21,6 +24,10 @@ export default () => {
           </a>
           <a href="https://linkedin.com/in/maarufdauda/">
             <img src={linkedin} alt="" />
+          </a>
+
+          <a href="https://dev.to/emkaydauda">
+            <FontAwesomeIcon  title="emkaydauda's DEV Profile" icon={faDev} />
           </a>
 
           <a href="https://instagram.com/mkdauda">
@@ -65,6 +72,11 @@ const FooterDiv = styled.footer`
     a {
       height: 1.4rem;
       width: 1.4rem;
+      font-size: 1.4rem;
+
+      svg {
+      vertical-align: 0;
+      }
 
       img {
         height: 1.4rem;
@@ -86,13 +98,13 @@ const FooterDiv = styled.footer`
     }
   }
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     > div {
       width: 40%;
     }
   }
 
-  @media only screen and (max-width: 500px){
+  @media only screen and (max-width: 500px) {
     > div {
       width: 80%;
     }
