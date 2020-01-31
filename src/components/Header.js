@@ -22,7 +22,7 @@ export default () => {
           ever grace our planet, Kotlin. I can use Java too, if you insist.{" "}
           <br />
           <br /> These days, I am learning Full-Stack Web Development at Lambda
-          School, along with principles of Data Science.
+          School, along with principles of Computer Science.
         </p>
 
         <a href="mailto:mkdauda.work@gmail.com">
