@@ -56,7 +56,7 @@ const HeaderDiv = styled.div`
   }
 
   span {
-    color: darkseagreen;
+    color: green;
   }
 
   p {
