@@ -34,9 +34,9 @@ export default () => {
             <img src={instagram} alt="" />
           </a>
 
-          <a href="https://facebook.com/mkdauda">
+          {/* <a href="https://facebook.com/mkdauda">
             <img src={facebook} alt="" />
-          </a>
+          </a> */}
         </div>
         <a href="https://github.com/emkayDauda">
           <p>
