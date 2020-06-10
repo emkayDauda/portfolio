@@ -12,8 +12,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Logo from "./utils/Splash";
 import { useSwipeable } from "react-swipeable";
+import ReactGA from "react-ga";
 
 import "./App.css";
+
+const trackingID = "UA-169143608-1";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,7 +27,7 @@ function App() {
     preventDefaultTouchmoveEvent: true, // preventDefault on touchmove, *See Details*
     trackTouch: true, // track touch input
     trackMouse: false, // track mouse input
-    rotationAngle: 0 // set a rotation angle
+    rotationAngle: 0, // set a rotation angle
   };
 
   const openMenu = () => {
@@ -33,7 +36,7 @@ function App() {
 
   const handlers = useSwipeable({
     onSwipedLeft: () => openMenu(),
-    ...config
+    ...config,
   });
 
   useEffect(() => {
@@ -43,10 +46,12 @@ function App() {
     }, 4 * 1000);
   }, []);
 
+  ReactGA.initialize(trackingID);
+
   return (
     <>
       {loading ? (
-        <div style={{'height': '100vh'}} >
+        <div style={{ height: "100vh" }}>
           <Logo />
         </div>
       ) : (
@@ -57,7 +62,7 @@ function App() {
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
             isOpen={menuOpen}
-            onStateChange={state => setMenuOpen(state.isOpen)}
+            onStateChange={(state) => setMenuOpen(state.isOpen)}
           />
           <Body id="page-wrap" {...handlers}>
             <Header />
