@@ -7,9 +7,20 @@ export default ({ project }) => {
   return (
     <ProjectCard>
       <div>
-        <Slide bottom>
-          <img src={project.image} alt="screenshot of a  project I worked on" />
-        </Slide>
+        <ImageContainer>
+          <Slide bottom>
+            <img
+              src={project.image[0]}
+              alt="screenshot of a  project I worked on"
+            />
+          </Slide>
+         {project.image[1] && <Slide bottom>
+            <img
+              src={project.image[1]}
+              alt="screenshot of a  project I worked on"
+            />
+          </Slide>}
+        </ImageContainer>
       </div>
 
       <div>
@@ -29,8 +40,23 @@ export default ({ project }) => {
   );
 };
 
+const ImageContainer = styled.div`
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100% !important;
+  align-items: center !important;
+  justify-content: center
+
+  img {
+    width: 50%;
+    border-radius: 1.5rem;
+    align-self: flex-end;
+  }
+`;
+
 const ProjectCard = styled.div`
   display: flex;
+  padding-bottom: 2rem;
   div {
     width: 50%;
     float: left;
@@ -40,17 +66,8 @@ const ProjectCard = styled.div`
 
     padding: 0 2.3rem;
 
-    img {
-      height: 25rem;
-      margin: 3rem 0;
-      width: 70%;
-      border-radius: 1.5rem;
-      border: 3px solid lightgray;
-      align-self: flex-end;
-    }
-
     span {
-      width: 70%;
+      width: 100%;
       text-align: center;
       justify-self: center;
 
@@ -75,9 +92,9 @@ const ProjectCard = styled.div`
 
   @media only screen and (max-width: 768px) {
     div {
+      width: 100%;
       img {
         width: 100%;
-        height: 80%;
       }
 
       span {
@@ -86,6 +103,7 @@ const ProjectCard = styled.div`
 
         p {
           font-size: 1rem;
+          margin-bottom: 2.2rem;
         }
       }
     }
@@ -96,12 +114,10 @@ const ProjectCard = styled.div`
     margin: 0 -1.5rem;
 
     div {
-      /* border: 1px solid; */
       width: 100%;
       padding: 0;
       img {
-        width: 100%;
-        height: 80%;
+        width: 50%;
       }
 
       span {
