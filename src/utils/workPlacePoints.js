@@ -1,9 +1,21 @@
 export default {
+  bp: [
+    "BuyPower is a YCombinator (W17) company simplifying consumer payments for utilities and energy across Nigeria.",
+    "At BuyPower, I work with a smart group of engineers in a fast-paced startup environment",
+    "We build and maintain the BuyPower apps servicing Nigerians and accruing hundreds of thousands in revenue each day",
+    "Technologies I work with daily at BuyPower include:",
+    "React, Flutter, Kotlin, Vue, Redux, Material-UI, etc"
+  ],
   lambda: [
     "Lambda School is a first-rate school of school of software engineering skills",
     "At Lambda School, I've met and interacted with software engineers with incredibly diverse backgrounds and levels of expertise. I've even made a few friends ^-^",
     "Technologies I've learned and work with daily at Lambda School include:",
     "React, Node, Express, Jest, Bulma, Styled-Components, etc"
+  ],
+  lautech: [
+    "I've earned my first degree from Ladoke Akintola University of Technology",
+    "At Lautech, I studied Computer Science for five years and earned a 4.04 CGPA on a scale of 5.00",
+    "At the very least, I can say my degree provided me with an introduction to Computer Architecture, Data Structures and Algorithms and a solid understanding of OOP principles."
   ],
   myflex: [
     "myFlex.ng is a utilities provider of airtime purchases, bill payments and mobile money.",
