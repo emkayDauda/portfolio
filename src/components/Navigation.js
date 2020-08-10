@@ -24,6 +24,9 @@ const Nav = () => {
             <FancyLink offset="100" href="#Experience">
               Experience
             </FancyLink>
+            <FancyLink offset="100" href="#Education">
+              Education
+            </FancyLink>
             <FancyLink offset="100" href="#Projects">
               Projects
             </FancyLink>
