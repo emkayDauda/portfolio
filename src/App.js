@@ -44,7 +44,7 @@ function App() {
     window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, .3 * 1000);
+    }, 4 * 1000);
   }, []);
 
   ReactGA.initialize(trackingID);
