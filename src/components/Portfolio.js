@@ -19,7 +19,7 @@ export default () => {
         <div>
           <RouterNav>
             <StyledLink activeClassName="active" exact to="/">
-              Lambda School
+              BuyPower
             </StyledLink>
 
             <StyledLink activeClassName="active" to="/experience/myFlex">
@@ -46,13 +46,13 @@ export default () => {
             >
               <Route
                 exact
-                path="/"
+                path={["/", "/education/:x"]}
                 render={() => (
                   <Experience
-                    companyName="Lambda School"
-                    companyWebsite="https://www.lambdaschool.com"
-                    tagline="August, 2019 - Present"
-                    points={workPoints.lambda}
+                    companyName="BuyPower"
+                    companyWebsite="https://www.buypower.ng"
+                    tagline="March, 2019 - Present"
+                    points={workPoints.bp}
                   />
                 )}
               />
@@ -63,7 +63,7 @@ export default () => {
                   <Experience
                     companyName="myFlex.ng"
                     companyWebsite="https://www.myflex.ng"
-                    tagline="July, 2019 - December, 2019"
+                    tagline="July, 2019 - February, 2020"
                     points={workPoints.myflex}
                   />
                 )}
