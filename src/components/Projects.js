@@ -6,12 +6,14 @@ import ProjectCard from "./ProjectCard";
 
 export default () => {
   return (
-      <Projects id="Projects">
-        <Heading>Projects I've Worked on</Heading>
-        {projects.map(p => (
+    <Projects id="Projects">
+      <Heading>Projects I've Worked on</Heading>
+      <br />
+      <span />
+        {projects.map((p) => (
           <ProjectCard id={Math.random()} project={p} />
         ))}
-      </Projects>
+    </Projects>
   );
 };
 
@@ -30,7 +32,7 @@ const Projects = styled.div`
   }
 
   @media only screen and (max-width: 500px) {
-    > div:nth-child(odd){
+    > div:nth-child(odd) {
       flex-direction: column-reverse;
     }
   }
