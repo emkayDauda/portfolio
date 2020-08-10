@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDev } from "@fortawesome/free-brands-svg-icons";
 
 import { Slide } from "react-reveal";
-import facebook from "./FooterIcons/004-facebook.svg";
 import linkedin from "./FooterIcons/003-linkedin.svg";
 import twitter from "./FooterIcons/002-twitter.svg";
 import github from "./FooterIcons/005-github.svg";
