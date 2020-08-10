@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "react-bulma-components/dist/react-bulma-components.min.css";
 import Navigation, { BurgerMenu } from "./components/Navigation";
 import Portfolio from "./components/Portfolio";
+import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -43,7 +44,7 @@ function App() {
     window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false);
-    }, 4 * 1000);
+    }, .3 * 1000);
   }, []);
 
   ReactGA.initialize(trackingID);
@@ -69,6 +70,9 @@ function App() {
             <About />
             <Router>
               <Portfolio />
+            </Router>
+            <Router>
+              <Education />
             </Router>
             <Projects />
             <Contact />

@@ -4,6 +4,12 @@
 
 }
 
+.active-right {
+    color: darkred;
+    border-right: 2px solid darkseagreen;
+
+}
+
 @media only screen and (max-width: 500px){
     .active {
         border-top: 2px solid darkseagreen;
