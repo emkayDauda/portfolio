@@ -14,12 +14,14 @@ export default ({ project }) => {
               alt="screenshot of a  project I worked on"
             />
           </Slide>
-         {project.image[1] && <Slide bottom>
-            <img
-              src={project.image[1]}
-              alt="screenshot of a  project I worked on"
-            />
-          </Slide>}
+          {project.image[1] && (
+            <Slide bottom>
+              <img
+                src={project.image[1]}
+                alt="screenshot of a  project I worked on"
+              />
+            </Slide>
+          )}
         </ImageContainer>
       </div>
 
@@ -45,9 +47,7 @@ const ImageContainer = styled.div`
   flex-direction: row !important;
   width: 100% !important;
   align-items: center !important;
-  justify-content: center
-
-  img {
+  justify-content: center img {
     width: 50%;
     border-radius: 1.5rem;
     align-self: flex-end;

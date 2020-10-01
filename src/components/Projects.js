@@ -10,9 +10,9 @@ export default () => {
       <Heading>Projects I've Worked on</Heading>
       <br />
       <span />
-        {projects.map((p) => (
-          <ProjectCard id={Math.random()} project={p} />
-        ))}
+      {projects.map((p) => (
+        <ProjectCard id={Math.random()} project={p} />
+      ))}
     </Projects>
   );
 };
