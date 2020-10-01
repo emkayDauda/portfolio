@@ -7,8 +7,12 @@ export default ({ companyName, companyWebsite, tagline, points }) => {
       <a href={companyWebsite}>{companyName}</a>
       <p>{tagline}</p>
       <ul>
-        {points.map(p => {
-          return <ListItem><span>{p}</span></ListItem>;
+        {points.map((p) => {
+          return (
+            <ListItem>
+              <span>{p}</span>
+            </ListItem>
+          );
         })}
       </ul>
     </ExperienceBody>
@@ -16,7 +20,6 @@ export default ({ companyName, companyWebsite, tagline, points }) => {
 };
 
 const ExperienceBody = styled.div`
-
   a {
     text-decoration: none;
     font-size: 2.8rem;
@@ -33,12 +36,12 @@ const ExperienceBody = styled.div`
 `;
 
 const ListItem = styled.li`
-    list-style: disc;
-    list-style-position: inside;
-    color: darkred;
-    margin: 1.9rem 0;
+  list-style: disc;
+  list-style-position: inside;
+  color: darkred;
+  margin: 1.9rem 0;
 
-    span {
-      color: gray;
-    }
-`
+  span {
+    color: gray;
+  }
+`;
