@@ -145,7 +145,7 @@ const Header = styled.header`
   margin: 0 -2rem;
   /* border-radius: 3rem; */
 `;
-export const BurgerMenu = props => {
+export const BurgerMenu = (props) => {
   const setMenuOpen = props.setMenuOpen;
   return (
     <NavLinks>
