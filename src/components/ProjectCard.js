@@ -50,7 +50,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   img {
     width: 50%;
-    /* max-width: 50% !important; */
+
     border-radius: 1.5rem;
     align-self: flex-end;
   }
