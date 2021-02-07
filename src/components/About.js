@@ -10,18 +10,18 @@ export default () => {
         <div>
           <Heading>Why even should you talk to me?</Heading>
           <p>
-            <br />I have <span> six years of experience with the{" "}
-            semi-colon. </span>
+            <br />I have{" "}
+            <span> six years of experience with the semi-colon. </span>
             Admittedly, the first two of those were spent drifting from one{" "}
             <span>shiny new tech</span>nology to another. <br /> <br />
-            These days, however, I can boast of a solid four years of
-            experience with <span>Native Android Development</span>, two years
-            of experience with <span>Hybrid Mobile (Flutter) Development </span>
-            and about six months of experience with <span>
+            These days, however, I can boast of a solid four years of experience
+            with <span>Native Android Development</span>, two years of
+            experience with <span>Hybrid Mobile (Flutter) Development </span>
+            and about two years of experience with <span>
               Full-Stack Web
             </span>{" "}
             technologies which I've just happened to pick up at{" "}
-            <span>Lambda School.</span>
+            <span>Lambda School</span> and my 9-5 at <span>BuyPower Inc.</span>
           </p>
         </div>
 
