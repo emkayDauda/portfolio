@@ -19,6 +19,9 @@ export default () => {
         <div>
           <RouterNav>
             <StyledLink activeClassName="active" exact to="/">
+              Monovo
+            </StyledLink>
+            <StyledLink activeClassName="active" to="/experience/buypower">
               BuyPower
             </StyledLink>
 
@@ -49,9 +52,22 @@ export default () => {
                 path={["/", "/education/:x"]}
                 render={() => (
                   <Experience
+                    companyName="Monovo"
+                    companyWebsite="https://www.linkedin.com/company/monovotech/"
+                    tagline="May, 2021 - Present"
+                    points={workPoints.monovo}
+                  />
+                )}
+              />
+
+              <Route
+                exact
+                path="/experience/buypower"
+                render={() => (
+                  <Experience
                     companyName="BuyPower"
                     companyWebsite="https://www.buypower.ng"
-                    tagline="March, 2019 - Present"
+                    tagline="March, 2020 - May, 2021"
                     points={workPoints.bp}
                   />
                 )}

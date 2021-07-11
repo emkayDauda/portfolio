@@ -21,8 +21,11 @@ export default () => {
           I craft beautiful Android apps with the best programming language to
           ever grace our planet, Kotlin. I can use Java too, if you insist.{" "}
           <br />
-          <br /> These days, I am building the future of consumer payments and
-          energy acquisition at BuyPowerInc (YC W17).
+          <br /> These days, I lead the Android team at a health startup and
+          constantly explore new ways of infusing technology into healthcare.
+          <br />
+          <br />
+          ...in a good, absolutely non-dystopian kind of way.
         </p>
 
         <a href="mailto:mkdauda.work@gmail.com">
