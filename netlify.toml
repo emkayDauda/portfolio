@@ -2,6 +2,12 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  
+[[redirects]]
+  from = "/altschool-exam"
+  to = "http://54.221.12.246"
+  status = 200
+
 
 [build]
   command = "npm run build"
