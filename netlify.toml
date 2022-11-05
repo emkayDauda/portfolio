@@ -7,6 +7,7 @@
   from = "/altschool-exam"
   to = "http://54.221.12.246"
   status = 200
+  force = true
 
 
 [build]
