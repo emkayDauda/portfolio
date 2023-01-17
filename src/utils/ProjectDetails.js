@@ -2,6 +2,14 @@ import BnBalyze_Home from "../assets/BnBalyze_Home.png";
 
 export default [
   {
+    title: `BuyPower`,
+    image: ['https://res.cloudinary.com/emkaydauda/image/upload/v1673949988/bp_login-removebg-preview.png', 'https://res.cloudinary.com/emkaydauda/image/upload/v1673949831/buypower-removebg-preview.png'],
+    stack: `Flutter, Provider`,
+    description: `BuyPower is a hybrid mobile app built for a YCombinator (W17) company of the same name to simplify consumer payments for utilities and energy across Nigeria. It is deployed on both app stores and still serves at least three customers per second.`,
+    gitHubLink: `#`,
+    hostedSite: `https://play.google.com/store/apps/details?id=com.ionicframework.buypowerapp334891&hl=en_GB&gl=US&pli=1`
+  },
+  {
     title: `Inventory`,
     image: ['https://res.cloudinary.com/emkaydauda/image/upload/c_scale,h_1857,w_942/v1596995166/Screenshot_1596990511_nexus6p-portrait.png', 'https://res.cloudinary.com/emkaydauda/image/upload/v1596994713/Screenshot_1596990645_nexus6p-portrait.png'],
     stack: `Flutter, Provider`,
