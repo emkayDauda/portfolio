@@ -2,6 +2,14 @@ import BnBalyze_Home from "../assets/BnBalyze_Home.png";
 
 export default [
   {
+    title: `Monovo`,
+    image: ['https://res.cloudinary.com/emkaydauda/image/upload/v1673988511/MPA_00_02_google-pixel5-justblack-portrait.png', 'https://res.cloudinary.com/emkaydauda/image/upload/v1673988517/MPA_03_06_google-pixel5-justblack-portrait.png'],
+    stack: `Kotlin, Jetpack Compose, MVVM, Coroutines`,
+    description: `Monovo was built using cutting-edge android technologies to monitor patient vitals and report any anomalies or issues to their health provider.`,
+    gitHubLink: `#`,
+    hostedSite: `https://play.google.com/store/apps/details?id=com.ionicframework.buypowerapp334891&hl=en_GB&gl=US&pli=1`
+  },
+  {
     title: `BuyPower`,
     image: ['https://res.cloudinary.com/emkaydauda/image/upload/v1673949988/bp_login-removebg-preview.png', 'https://res.cloudinary.com/emkaydauda/image/upload/v1673949831/buypower-removebg-preview.png'],
     stack: `Flutter, Provider`,
