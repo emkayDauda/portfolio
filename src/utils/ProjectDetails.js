@@ -13,7 +13,7 @@ export default [
     title: `BuyPower`,
     image: ['https://res.cloudinary.com/emkaydauda/image/upload/v1673949988/bp_login-removebg-preview.png', 'https://res.cloudinary.com/emkaydauda/image/upload/v1673949831/buypower-removebg-preview.png'],
     stack: `Flutter, Provider`,
-    description: `BuyPower is a hybrid mobile app built for a YCombinator (W17) company of the same name to simplify consumer payments for utilities and energy across Nigeria. It is deployed on both app stores and still serves at least three customers per second.`,
+    description: `BuyPower is a hybrid mobile app built for a YCombinator (W17) company of the same name to simplify consumer payments for utilities and energy across Nigeria. It is deployed on both app stores and still serves hundreds of customers every day.`,
     gitHubLink: `#`,
     hostedSite: `https://play.google.com/store/apps/details?id=com.ionicframework.buypowerapp334891&hl=en_GB&gl=US&pli=1`
   },
