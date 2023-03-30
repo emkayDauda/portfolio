@@ -12,9 +12,9 @@ export default () => {
           <p>
             <br />I have{" "}
             <span> six years of experience with the semi-colon. </span>
-            Admittedly, the first two of those were spent drifting from one{" "}
+            Admittedly, the first two of those were spent as a student drifting from one{" "}
             <span>shiny new tech</span>nology to another. <br /> <br />
-            These days, however, I can boast of a solid four years of experience
+            These days, however, I can boast of a solid four years of professional experience
             with <span>Native Android Development</span>, two years of
             experience with <span>Hybrid Mobile (Flutter) Development </span>
             and about two years of experience with <span>
