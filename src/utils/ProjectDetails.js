@@ -7,7 +7,7 @@ export default [
     stack: `Kotlin, Jetpack Compose, MVVM, Coroutines`,
     description: `Monovo was built using cutting-edge android technologies to monitor patient vitals and report any anomalies or issues to their health provider.`,
     gitHubLink: `#`,
-    hostedSite: `https://play.google.com/store/apps/details?id=com.ionicframework.buypowerapp334891&hl=en_GB&gl=US&pli=1`
+    hostedSite: `https://play.google.com/store/apps/details?id=com.monovo.app`
   },
   {
     title: `BuyPower`,
@@ -15,7 +15,7 @@ export default [
     stack: `Flutter, Provider`,
     description: `BuyPower is a hybrid mobile app built for a YCombinator (W17) company of the same name to simplify consumer payments for utilities and energy across Nigeria. It is deployed on both app stores and still serves hundreds of customers every day.`,
     gitHubLink: `#`,
-    hostedSite: `https://play.google.com/store/apps/details?id=com.ionicframework.buypowerapp334891&hl=en_GB&gl=US&pli=1`
+    hostedSite: `https://play.google.com/store/apps/details?id=com.ionicframework.buypowerapp334891`
   },
   {
     title: `Inventory`,
