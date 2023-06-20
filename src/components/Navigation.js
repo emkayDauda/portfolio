@@ -33,13 +33,13 @@ const Nav = () => {
             <FancyLink offset="100" href="#Contact">
               Contact
             </FancyLink>
-            <FancyAnchor
+            {/* <FancyAnchor
               href={resume}
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
               Resume
-            </FancyAnchor>
+            </FancyAnchor> */}
           </Slide>
         </div>
       </NavBody>
@@ -181,9 +181,9 @@ export const BurgerMenu = (props) => {
         >
           Contact
         </FancyLink>
-        <FancierLink onClick={() => setMenuOpen(false)} href="#Resume">
+        {/* <FancierLink onClick={() => setMenuOpen(false)} href="#Resume">
           Resume
-        </FancierLink>
+        </FancierLink> */}
       </Menu>
     </NavLinks>
   );
